@@ -1,5 +1,5 @@
 from openpyxl import load_workbook
-quiz_1 = load_workbook("MAT120API.xlsx")["Quiz 1"]
+quiz_1 = load_workbook("MAT110API.xlsx")["Quiz 1"]
 def quiz1_mark(id, email=None, bux = None):
     for row in range(2, 1100):
         id_char  = "A"+str(row)
@@ -17,5 +17,3 @@ def quiz1_mark(id, email=None, bux = None):
     
     return "Not Found."
 
-
-print(quiz1_mark(21201666))
